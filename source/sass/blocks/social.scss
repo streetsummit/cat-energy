@@ -1,0 +1,24 @@
+.social {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 35px;
+}
+
+.social__item:last-of-type {
+  margin-right: 0;
+}
+
+.social__link {
+  position: relative;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+}
