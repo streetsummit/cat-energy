@@ -1,13 +1,14 @@
 @import "font-face.scss";
 @import "variables.scss";
 @import "global.scss";
+@import "blocks/visually-hidden";
 @import "blocks/container.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/burger-button.scss";
-@import "blocks/visually-hidden";
 @import "blocks/site-nav.scss";
 @import "blocks/main-title.scss";
+@import "blocks/page-main.scss";
 @import "blocks/promo.scss";
 @import "blocks/button.scss";
 @import "blocks/nutrition.scss";
@@ -17,3 +18,11 @@
 @import "blocks/example.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/more-card.scss";
+@import "blocks/legend.scss";
+@import "blocks/extra.scss";
+@import "blocks/extra-card.scss";
+@import "blocks/select-program.scss";
+@import "blocks/form.scss";
