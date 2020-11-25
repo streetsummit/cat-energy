@@ -1,0 +1,23 @@
+.extra__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.extra__gift {
+  box-sizing: border-box;
+  padding-top: 186px;
+  height: 289px;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: rgba($basic-color, 0.85);
+}
+
+.extra__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white-color;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.program {
+  padding: 30px 20px 18px;
+  background-color: $section-background;
+}
+
+.program__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 29px;
+  padding-left: 72px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  color: $black-color;
+}
+
+.program__description {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__link {
+  display: block;
+  padding: 4px 39px 4px 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: $black-color;
+}
