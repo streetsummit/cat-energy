@@ -1,0 +1,26 @@
+.text-field {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.text-field__name {
+  margin-right: 15px;
+}
+
+.text-field__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-text-color;
+  border: 1px solid #e7e7e7;
+}
+
