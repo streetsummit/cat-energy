@@ -9,6 +9,15 @@
     url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
+      url("../img/index-background-mobile.jpg");
+  }
 }
 
 .promo__title {
@@ -24,7 +33,11 @@
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  color: $white-color;
+  color: $black-color;
+
+  @media (max-width: $mobile-width-only) {
+    color: $white-color;
+  }
 }
 
 .promo__bottom-wrapper {

@@ -1,11 +1,16 @@
-.page-footer {
+.page-footer__top {
   padding-top: 28px;
+  padding-bottom: 22px;
+  background-color: $section-background;
+
+  &--index {
+    background-color: $page-background;
+  }
 }
 
-.page-footer__contacts {
+.page-footer__top-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
 }
 
 .page-footer__invite {

@@ -2,8 +2,22 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.nutrition__programs-item:not(:last-of-type) {
+.nutrition__programs-item {
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
+
+.nutrition__programs-item:last-of-type {
+  margin-bottom: 0;
 }

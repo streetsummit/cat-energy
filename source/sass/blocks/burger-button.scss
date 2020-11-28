@@ -6,6 +6,10 @@
 
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .burger-button__decoration,

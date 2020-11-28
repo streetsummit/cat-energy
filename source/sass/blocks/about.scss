@@ -11,10 +11,20 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about__item {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
 }
 
 .about__item:last-of-type {
@@ -23,21 +33,31 @@
 
 .about__content {
   position: relative;
-  padding-left: 80px;
-  margin: 0;
-  min-height: 60px;
   display: flex;
   align-items: center;
+  min-height: 60px;
+  margin: 0;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 91px;
+  }
 }
 
 .about__content::before {
   content: "";
   position: absolute;
+  left: 0;
+  display: block;
   width: 60px;
   height: 60px;
   background-color: $basic-color;
-  left: 0;
-  display: block;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 /*

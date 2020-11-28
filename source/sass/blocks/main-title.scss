@@ -9,6 +9,8 @@
   color: $black-color;
 
   &--index {
-    color: $white-color;
+    @media (max-width: $mobile-width-only) {
+      color: $white-color;
+    }
   }
 }

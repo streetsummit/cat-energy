@@ -10,35 +10,39 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper container">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <button class="burger-button" type="button" aria-label="Открыть меню">
-          <span class="burger-button__decoration"></span>
-        </button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item site-nav__item--current">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-nav__item site-nav__item--current">
-            <a>
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-nav__item">
-            <a href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
+          </a>
+          <button class="burger-button" type="button" aria-label="Открыть меню">
+            <span class="burger-button__decoration"></span>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item site-nav__item--current">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-nav__item site-nav__item--current">
+              <a>
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  <main class="page-main page-main--inner">
+  <main class="page-main">
 
     <section class="catalog">
       <div class="container">
@@ -271,43 +275,52 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__contacts container">
-      <p class="page-footer__invite">
-        Приглашаем<br>
-        к сотрудничеству<br>
-        дилеров!
-      </p>
-      <p class="page-footer__address">
-        ул. Большая<br>
-        Конюшенная, д. 19/8<br>
-        <span class="page-footer__city">Санкт-Петербург</span>
-      </p>
+    <div class="page-footer__top">
+      <div class="container">
+        <div class="page-footer__top-wrapper">
+          <p class="page-footer__invite">
+            Приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </p>
+          <p class="page-footer__address">
+            ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            <span class="page-footer__city">Санкт-Петербург</span>
+          </p>
+        </div>
+      </div>
     </div>
+
     <div class="page-footer__map">
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b39b3bc650e800ffbc5a01d347533d6dcd09f01264e93829f69b097eb293057&amp;source=constructor"
         width="100%" height="362" allowfullscreen
         title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </div>
-    <div class="page-footer__bottom container">
-      <a class="page-footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
-      <div class="page-footer__social">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href=""><span>Мы Вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--ig" href=""><span>Мы в Иинстаграмм</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href=""><span>Мы в Фейсбук</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__bottom">
+      <div class="container">
+        <div class="page-footer__bottom-wrapper">
+          <a class="page-footer__logo" href="index.html">
+            <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <div class="page-footer__social">
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href=""><span>Мы Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--ig" href=""><span>Мы в Иинстаграмм</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href=""><span>Мы в Фейсбук</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
