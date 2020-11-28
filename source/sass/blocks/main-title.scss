@@ -7,4 +7,8 @@
   font-weight: normal;
 
   color: $black-color;
+
+  &--index {
+    color: $white-color;
+  }
 }

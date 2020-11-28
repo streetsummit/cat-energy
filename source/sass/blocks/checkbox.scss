@@ -1,0 +1,30 @@
+.checkbox {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.checkbox__name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 46px;
+  min-height: 30px;
+}
+
+.checkbox__name::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 0;
+  border: 1px solid #cdcdcd;
+}
+
+/*.checkbox__input:checked + .checkbox__name::after {
+  content: "";
+  position: absolute;*/
