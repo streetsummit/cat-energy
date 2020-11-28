@@ -1,9 +1,19 @@
-.promo__top-wrapper {
-  box-sizing: border-box;
-  margin-bottom: 138px;
+.promo {
+  position: relative;
   padding-top: 27px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 130px;
+  }
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
   height: 302px;
-  text-align: center;
+  top: 0;
 
   background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
     url("../img/index-background-mobile.jpg"),
@@ -12,19 +22,37 @@
   background-position: top center;
 
   @media (min-width: $tablet-width) {
-    background-image: none;
+    display: none;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
+    width: 50%;
+    height: 694px;
+    top: -130px;
+    left: 50%;
+
     background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-      url("../img/index-background-mobile.jpg"),
+      url("../img/index-background-desktop.jpg"),
       linear-gradient(to top, #4e4d52, #4e4d52);
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+.promo__top-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 87px;
   }
 }
 
 .promo__title {
   margin-bottom: 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__lead {
@@ -40,13 +68,17 @@
   @media (max-width: $mobile-width-only) {
     color: $white-color;
   }
-}
 
-.promo__bottom-wrapper {
-  margin-bottom: 22px;
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .promo__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 244px;
+  }
 }
