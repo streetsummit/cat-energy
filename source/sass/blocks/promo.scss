@@ -6,7 +6,8 @@
   text-align: center;
 
   background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-    url("../img/index-background-mobile.jpg");
+    url("../img/index-background-mobile.jpg"),
+    linear-gradient(to top, #4e4d52, #4e4d52);
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -16,7 +17,8 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-      url("../img/index-background-mobile.jpg");
+      url("../img/index-background-mobile.jpg"),
+      linear-gradient(to top, #4e4d52, #4e4d52);
   }
 }
 

@@ -113,59 +113,62 @@
 
     <section class="example">
       <div class="container">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
+        <div class="example__wrapper">
+          <h2 class="example__title title">Живой пример</h2>
 
-        <div class="example__facts">
-          <dl class="example__facts-list">
-            <div class="example__facts-item">
-              <dt class="example__facts-number">
-                5 кг
-              </dt>
-              <dd class="example__facts-description">
-                снижение <br>
-                веса
-              </dd>
+          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.</p>
+
+          <div class="example__facts">
+            <dl class="example__facts-list">
+              <div class="example__facts-item">
+                <dt class="example__facts-number">
+                  5 кг
+                </dt>
+                <dd class="example__facts-description">
+                  снижение <br>
+                  веса
+                </dd>
+              </div>
+              <div class="example__facts-item">
+                <dt class="example__facts-number">
+                  60 дней
+                </dt>
+                <dd class="example__facts-description">
+                  затрачено <br>
+                  времени
+                </dd>
+              </div>
+            </dl>
+            <div class="example__cost">
+              <span class="example__cost-description">Затраты на питание:</span>
+              <span class="example__cost-value">15 000 руб.</span>
             </div>
-            <div class="example__facts-item">
-              <dt class="example__facts-number">
-                60 дней
-              </dt>
-              <dd class="example__facts-description">
-                затрачено <br>
-                времени
-              </dd>
-            </div>
-          </dl>
-          <div class="example__cost">
-            <span class="example__cost-description">Затраты на питание:</span>
-            <span class="example__cost-value">15 000 руб.</span>
           </div>
-        </div>
 
-        <div class="example__slider">
-          <div class="example__slider-images">
-            <div class="example__image example__image--before example__image--current">
-              <img src="https://via.placeholder.com/280x232" width="280" height="232"
-                alt="Упитанный кот до приема Energy cat">
-            </div>
-            <!--
+          <div class="example__slider">
+            <div class="example__slider-images">
+              <div class="example__image example__image--before example__image--current">
+                <img src="https://via.placeholder.com/280x232" width="280" height="232"
+                  alt="Упитанный кот до приема Energy cat">
+              </div>
+              <!--
             <div class="example__image example__image--after">
               <img src="https://via.placeholder.com/280x232" width="280" height="232"
                 alt="Стройный кот после приема Energy cat">
             </div>
           -->
-          </div>
-          <div class="example__slider-control">
-            <button class="example__state-button example__state-button--before" type="button">Было</button>
-            <div class="example__scale">
-              <div class="example__bar" style="width: 50%"></div>
             </div>
-            <div class="example__toggle"></div>
-            <button class="example__state-button example__state-button--after" type="button">Стало</button>
+            <div class="example__slider-control">
+              <button class="example__state-button example__state-button--before" type="button">Было</button>
+              <div class="example__scale">
+                <div class="example__bar" style="width: 50%"></div>
+              </div>
+              <div class="example__toggle"></div>
+              <button class="example__state-button example__state-button--after" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </div>
@@ -174,9 +177,9 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__top page-footer__top--index">
+    <div class="page-footer__contacts page-footer__contacts--index">
       <div class="container">
-        <div class="page-footer__top-wrapper">
+        <div class="page-footer__contacts-wrapper">
           <p class="page-footer__invite">
             Приглашаем<br>
             к сотрудничеству<br>
@@ -189,14 +192,15 @@
           </p>
         </div>
       </div>
-    </div>
+      <div class="page-footer__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b39b3bc650e800ffbc5a01d347533d6dcd09f01264e93829f69b097eb293057&amp;source=constructor"
+          width="100%" height="362" allowfullscreen
+          title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      </div>
+    </div> <!--page-footer__contacts-->
 
-    <div class="page-footer__map">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b39b3bc650e800ffbc5a01d347533d6dcd09f01264e93829f69b097eb293057&amp;source=constructor"
-        width="100%" height="362" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-    </div>
+
     <div class="page-footer__bottom">
       <div class="container">
         <div class="page-footer__bottom-wrapper">
@@ -209,7 +213,7 @@
                 <a class="social__link social__link--vk" href=""><span>Мы Вконтакте</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--ig" href=""><span>Мы в Иинстаграмм</span></a>
+                <a class="social__link social__link--ig" href=""><span>Мы в Инстаграмм</span></a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--fb" href=""><span>Мы в Фейсбук</span></a>
