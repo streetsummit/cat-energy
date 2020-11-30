@@ -1,3 +1,15 @@
+.select-program {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
+}
+
 .select-program__title {
   margin-bottom: 37px;
 }

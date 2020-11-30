@@ -44,65 +44,66 @@
   </header>
 
   <main class="page-main">
-
-    <section class="select-program">
-      <div class="container">
+    <div class="container container--narrow">
+      <section class="select-program">
         <h1 class="select-program__title main-title">Подбор программы</h1>
         <h2 class="visually-hidden">Форма подбора программы</h2>
         <p class="select-program__lead">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="select-program__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__columns">
+            <fieldset class="form__item">
+              <legend class="visually-hidden">Информация о вашем питомце</legend>
 
-          <fieldset class="form__item">
-            <legend class="visually-hidden">Информация о вашем питомце</legend>
+              <label class="form__label text-field">
+                <span class="text-field__name">Имя:<sup>*</sup></span>
+                <input class="text-field__input" type="text" name="cat-name" placeholder="Барсик" required>
+              </label>
 
-            <label class="form__label text-field">
-              <span class="text-field__name">Имя:<sup>*</sup></span>
-              <input class="text-field__input" type="text" name="cat-name" placeholder="Барсик" required>
-            </label>
+              <label class="form__label text-field">
+                <span class="text-field__name">Вес(кг):<sup>*</sup></span>
+                <input class="text-field__input" type="number" name="cat-weight" placeholder="7" required>
+              </label>
 
-            <label class="form__label text-field">
-              <span class="text-field__name">Вес(кг):<sup>*</sup></span>
-              <input class="text-field__input" type="number" name="cat-weight" placeholder="7" required>
-            </label>
+              <label class="form__label text-field">
+                <span class="text-field__name">Возраст (лет):</span>
+                <input class="text-field__input" type="number" name="cat-age" placeholder="7">
+              </label>
+            </fieldset>
 
-            <label class="form__label text-field">
-              <span class="text-field__name">Возраст (лет):</span>
-              <input class="text-field__input" type="number" name="cat-age" placeholder="7">
-            </label>
-          </fieldset>
+            <fieldset class="form__item form__item--result">
+              <legend class="visually-hidden">Желаемый результат</legend>
 
-          <fieldset class="form__item form__item--result">
-            <legend class="visually-hidden">Желаемый результат</legend>
+              <label class="form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="result" checked>
+                <span class="radio__name">Похудение</span>
+              </label>
 
-            <label class="form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="result" checked>
-              <span class="radio__name">Похудение</span>
-            </label>
+              <label class="form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="result">
+                <span class="radio__name">Набор массы</span>
+              </label>
 
-            <label class="form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="result">
-              <span class="radio__name">Набор массы</span>
-            </label>
-
-            <label class="form__label radio">
-              <input class="radio__input visually-hidden" type="radio" name="result">
-              <span class="radio__name">Не знаю (нужен ваш совет)</span>
-            </label>
-          </fieldset>
+              <label class="form__label radio">
+                <input class="radio__input visually-hidden" type="radio" name="result">
+                <span class="radio__name">Не знаю (нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
 
           <fieldset class="form__item">
             <legend class="form__legend legend">Контактные данные (владельца кота)</legend>
+            <div class="form__columns">
+              <label class="form__label text-field">
+                <span class="text-field__name">E-mail:<sup>*</sup></span>
+                <input class="text-field__input" type="email" name="user-email" placeholder="kuklachev@gmail.com"
+                  required>
+              </label>
 
-            <label class="form__label text-field">
-              <span class="text-field__name">E-mail:<sup>*</sup></span>
-              <input class="text-field__input" type="email" name="user-email" placeholder="kuklachev@gmail.com"
-                required>
-            </label>
-
-            <label class="form__label text-field">
-              <span class="text-field__name">Телефон:<sup>*</sup></span>
-              <input class="text-field__input" type="tel" name="user-phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+              <label class="form__label text-field">
+                <span class="text-field__name">Телефон:<sup>*</sup></span>
+                <input class="text-field__input" type="tel" name="user-phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__item">
@@ -117,37 +118,40 @@
 
           <fieldset class="form__item">
             <legend class="form__legend legend">Дополнительно</legend>
+            <div class="form__fieldset-wrapper">
+              <label class="form__label form__label--extra checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
+                <span class="checkbox__name">Сахарозаменитель</span>
+              </label>
 
-            <label class="form__label checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="checkbox__name">Сахарозаменитель</span>
-            </label>
+              <label class="form__label form__label--extra checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="water">
+                <span class="checkbox__name">Питьевая вода</span>
+              </label>
 
-            <label class="form__label checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="water">
-              <span class="checkbox__name">Питьевая вода</span>
-            </label>
+              <label class="form__label form__label--extra checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
+                <span class="checkbox__name">Молоко</span>
+              </label>
 
-            <label class="form__label checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
-              <span class="checkbox__name">Молоко</span>
-            </label>
-
-            <label class="form__label checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
-              <span class="checkbox__name">Витамины</span>
-            </label>
+              <label class="form__label form__label--extra checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
+                <span class="checkbox__name">Витамины</span>
+              </label>
+            </div>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__note">* — Обязательные поля</p>
+          <div class="form__footer">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__note">* — Обязательные поля</p>
+          </div>
         </form>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__contacts">
-      <div class="container">
+      <div class="container container--narrow">
         <div class="page-footer__contacts-wrapper">
           <p class="page-footer__invite">
             Приглашаем<br>
