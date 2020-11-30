@@ -6,17 +6,49 @@
 
 .example__title {
   margin-bottom: 33px;
+  grid-area: title;
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title slider"
+      "intro slider"
+      "facts slider";
+  }
 }
 
 .example__intro {
   margin-top: 0;
   margin-bottom: 25px;
+  grid-area: intro;
+}
+
+.example__facts {
+  grid-area: facts;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    width: 366px;
+  }
 }
 
 .example__facts-list {
   display: flex;
+  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__facts-item {
@@ -30,7 +62,7 @@
 .example__facts-number {
   padding-top: 15px;
   margin-bottom: 8px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $special-font-stack;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -50,7 +82,7 @@
 
 .example__cost {
   margin-bottom: 42px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $special-font-stack;
   font-size: 14px;
   line-height: 20px;
 
@@ -58,6 +90,26 @@
   text-transform: uppercase;
 
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.example__cost-description {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.example__slider {
+  grid-area: slider;
 }
 
 .example__slider-images {
@@ -74,7 +126,7 @@
 
 .example__state-button {
   padding: 4px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $special-font-stack;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
