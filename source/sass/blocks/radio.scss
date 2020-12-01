@@ -1,7 +1,5 @@
 .radio {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  align-items: center;
+  display: block;
   font-family: $special-font-stack;
   font-size: 16px;
   line-height: 18px;
