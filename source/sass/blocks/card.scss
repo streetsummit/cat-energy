@@ -1,10 +1,26 @@
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "c-image c-title"
+    "c-image c-options"
+    "c-button c-button";
   padding-top: 19px;
   padding-bottom: 24px;
   border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "c-image"
+      "c-title"
+      "c-options"
+      "c-button";
+  }
 }
 
 .card__title {
+  grid-area: c-title;
   margin-top: 0;
   margin-bottom: 18px;
   font-family: $special-font-stack;
@@ -15,8 +31,17 @@
   color: #222222;
 }
 
+.card__image {
+  grid-area: c-image;
+}
+
 .card__options {
+  grid-area: c-options;
   font-size: 12px;
   line-height: 16px;
   border-collapse: collapse;
+}
+
+.card__button {
+  grid-area: c-button;
 }

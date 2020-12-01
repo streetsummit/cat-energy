@@ -1,12 +1,22 @@
+.extra {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.extra__title {
+  grid-column: 1 / -1;
+  margin-bottom: 35px;
+}
+
 .extra__list {
+  grid-column: 1 / -2;
   padding: 0;
   margin-top: 0;
   margin-bottom: 40px;
   list-style: none;
-}
-
-.extra__title {
-  margin-bottom: 35px;
 }
 
 .extra__gift {
