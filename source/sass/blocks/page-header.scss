@@ -1,6 +1,23 @@
 .page-header__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -14,4 +31,20 @@
   align-items: center;
   padding-top: 11px;
   padding-bottom: 15px;
+}
+
+.page-header__logo img {
+  display: block;
+}
+
+.page-header__nav {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.page-header__nav-toggle {
+  cursor: pointer;
 }

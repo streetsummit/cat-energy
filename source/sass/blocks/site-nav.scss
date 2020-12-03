@@ -1,6 +1,6 @@
 .site-nav {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -11,15 +11,33 @@
 }
 
 .site-nav__item {
+  position: relative;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
 
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .site-nav__item a {
   display: block;
-  padding: 22px 22px 24px;
+  padding: 23px 22px;
+
+  font-family: $special-font-stack;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
 }
