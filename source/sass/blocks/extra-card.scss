@@ -2,10 +2,18 @@
   padding-top: 13px;
   padding-bottom: 18px;
   border-top: 1px solid #cdcdcd;
-}
 
-.extra-card:last-of-type {
-  padding-bottom: 1px solid #cdcdcd;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &:last-of-type {
+    padding-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .extra-card__title {
@@ -17,6 +25,14 @@
   line-height: 16px;
   color: $black-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }
 
 .extra-card__options {
@@ -25,8 +41,29 @@
   display: flex;
   justify-content: space-between;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .extra-card__value {
   margin-left: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+  }
+}
+
+.extra-card__button {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
