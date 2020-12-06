@@ -11,10 +11,16 @@
 }
 
 .nutrition__programs-item {
+  display: flex;
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 570px;
+    width: 570px;
+    margin-bottom: 0;
   }
 }
 

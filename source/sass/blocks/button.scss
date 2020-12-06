@@ -1,6 +1,6 @@
 .button {
-  display: block;
-  padding: 10px;
+  display: inline-block;
+  padding: 11px;
   box-sizing: border-box;
   font-family: $special-font-stack;
   font-size: 16px;
@@ -10,11 +10,18 @@
   color: $white-color;
   background-color: $basic-color;
   border: none;
-}
 
-.button--small-text {
-  font-size: 14px;
-  line-height: 18px;
+  &--small-text {
+    @media (max-width: $mobile-width-only) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px;
+    font-size: 20px;
+  }
 }
 
 .button--colorless {

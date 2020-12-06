@@ -16,12 +16,12 @@
           <a class="page-header__logo">
             <img src="https://via.placeholder.com/191x38" width="191" height="38" alt="Логотип Cat Energy">
           </a>
-          <button class="page-header__nav-toggle burger-button burger-button--closed" type="button"
+          <button class="page-header__nav-toggle burger-button--closed visually-hidden" type="button"
             aria-label="Открыть меню">
             <span class="burger-button__decoration"></span>
           </button>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-nav">
             <li class="site-nav__item site-nav__item--current site-nav__item--index">
               <a>
@@ -48,11 +48,12 @@
 
     <section class="promo">
       <div class="container">
-        <div class="promo__top-wrapper">
+        <div class="promo__wrapper">
           <h1 class="promo__title main-title main-title--index">Функциональное<br> питание для котов</h1>
           <p class="promo__lead">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270"
-            alt="Банка Cat Energy Pro со вкусом курицы">
+          <div class="promo__image">
+            <img src="img/index-can-mobile.png" width="280" height="270" alt="Банка Cat Energy Pro со вкусом курицы">
+          </div>
           <a class="promo__button button button--small-text" href="form.html">Подобрать программу</a>
         </div>
       </div>
@@ -68,16 +69,20 @@
               <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
                 деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__link" href="catalog.html">Каталог slim</a>
+              <div class="program__link">
+                <a href="catalog.html">Каталог slim</a>
+              </div>
             </div>
           </li>
           <li class="nutrition__programs-item">
-            <div class="program program--slim">
+            <div class="program program--pro">
               <h3 class="program__title">Набор массы</h3>
               <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
                 Pro
                 поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__link" href="catalog.html">Каталог pro</a>
+              <div class="program__link">
+                <a href="catalog.html">Каталог pro</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -231,6 +236,8 @@
     var navToggle = document.querySelector('.page-header__nav-toggle');
 
     navMain.classList.remove('main-nav--nojs');
+    navToggle.classList.remove('visually-hidden');
+    navToggle.classList.add('burger-button');
 
     navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
