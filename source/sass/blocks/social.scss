@@ -1,24 +1,13 @@
 .social {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
 }
 
-.social__item {
-  margin-right: 35px;
-}
-
-.social__item:last-of-type {
-  margin-right: 0;
-}
-
 .social__link {
-  position: relative;
-}
-
-.social__link::before {
-  content: "";
-  position: absolute;
+  display: block;
 }

@@ -16,12 +16,19 @@
   padding-top: 28px;
   padding-bottom: 26px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 57px;
+  }
+
   @media (min-width: $desktop-width) {
+    box-sizing: border-box;
     position: absolute;
     z-index: 2;
     top: 95px;
-    width: 420px;
-    padding: 66px 75px 51px;
+    width: 570px;
+    padding-right: 90px;
+    padding-left: 76px;
     background-color: $page-background;
   }
 }
@@ -35,29 +42,59 @@
   text-transform: uppercase;
 
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .page-footer__address {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.page-footer__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 .page-footer__map iframe {
   display: block;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__bottom {
   padding-top: 39px;
   padding-bottom: 35px;
   background-color: $section-background;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
 }
 
 .page-footer__bottom-wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
   }
 }
 
@@ -68,21 +105,44 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
 .page-footer__social {
   margin-bottom: 22px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 14px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    border: none;
+  }
+}
+
+.page-footer__social-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: 135px;
 }
 
 .page-footer__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+
+    span {
+      margin-right: 22px;
+    }
+  }
 }
 
 .page-footer__copyright {
