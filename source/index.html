@@ -120,59 +120,63 @@
     <section class="example">
       <div class="container">
         <div class="example__wrapper">
-          <h2 class="example__title title">Живой пример</h2>
+          <div class="example__info">
+            <h2 class="example__title title">Живой пример</h2>
 
-          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy
-            Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день.</p>
+            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+              Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+              по&#8209;прежнему спит по 16 часов в день.</p>
 
-          <div class="example__facts">
-            <dl class="example__facts-list">
-              <div class="example__facts-item">
-                <dt class="example__facts-number">
-                  5 кг
-                </dt>
-                <dd class="example__facts-description">
-                  снижение <br>
-                  веса
-                </dd>
+            <div class="example__facts">
+              <dl class="example__facts-list">
+                <div class="example__facts-item">
+                  <dt class="example__facts-number">
+                    5 кг
+                  </dt>
+                  <dd class="example__facts-description">
+                    снижение <br class="example__br">
+                    веса
+                  </dd>
+                </div>
+                <div class="example__facts-item">
+                  <dt class="example__facts-number">
+                    60 дней
+                  </dt>
+                  <dd class="example__facts-description">
+                    затрачено <br class="example__br">
+                    времени
+                  </dd>
+                </div>
+              </dl>
+              <div class="example__cost">
+                <span class="example__cost-description">Затраты на питание:</span>
+                <span class="example__cost-value">15 000 руб.</span>
               </div>
-              <div class="example__facts-item">
-                <dt class="example__facts-number">
-                  60 дней
-                </dt>
-                <dd class="example__facts-description">
-                  затрачено <br>
-                  времени
-                </dd>
-              </div>
-            </dl>
-            <div class="example__cost">
-              <span class="example__cost-description">Затраты на питание:</span>
-              <span class="example__cost-value">15 000 руб.</span>
             </div>
           </div>
-
           <div class="example__slider">
             <div class="example__slider-images">
-              <div class="example__image example__image--before example__image--current">
-                <img src="https://via.placeholder.com/280x232" width="280" height="232"
-                  alt="Упитанный кот до приема Energy cat">
-              </div>
+              <img class="example__image example__image--before" src="img/cat-fat.png" width="280" height="232"
+                alt="Упитанный кот до приема Energy cat">
+
               <!--
-            <div class="example__image example__image--after">
-              <img src="https://via.placeholder.com/280x232" width="280" height="232"
+
+              <img class="example__image example__image--after src="img/cat-skinny.png" width="280" height="232"
                 alt="Стройный кот после приема Energy cat">
-            </div>
+
           -->
             </div>
             <div class="example__slider-control">
               <button class="example__state-button example__state-button--before" type="button">Было</button>
+
               <div class="example__scale">
-                <div class="example__bar" style="width: 50%"></div>
+                <div class="example__bar-wrapper">
+                  <div class="example__bar" style="width: 50%">
+                    <div class="example__toggle" tabindex="0" aria-label="Сравнить до и после"></div>
+                  </div>
+                </div>
               </div>
-              <div class="example__toggle"></div>
+
               <button class="example__state-button example__state-button--after" type="button">Стало</button>
             </div>
           </div>
@@ -205,14 +209,13 @@
           title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       </div>
     </div>
-    <!--page-footer__contacts-->
 
 
     <div class="page-footer__bottom">
       <div class="container">
         <div class="page-footer__bottom-wrapper">
           <a class="page-footer__logo">
-            <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
+            <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
           <div class="page-footer__social">
             <ul class="social">

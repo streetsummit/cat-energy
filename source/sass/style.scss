@@ -1,6 +1,7 @@
 @import "font-face.scss";
 @import "variables.scss";
 @import "global.scss";
+@import "mixins.scss";
 @import "blocks/visually-hidden";
 @import "blocks/container.scss";
 @import "blocks/page.scss";
@@ -9,7 +10,6 @@
 @import "blocks/burger-button.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/main-title.scss";
-/*@import "blocks/page-main.scss";*/
 @import "blocks/promo.scss";
 @import "blocks/button.scss";
 @import "blocks/nutrition.scss";

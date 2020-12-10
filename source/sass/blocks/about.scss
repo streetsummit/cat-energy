@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
+    padding-bottom: 24px;
   }
 }
 
@@ -29,7 +31,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 58px;
-    row-gap: 37px;
+    row-gap: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,8 +41,6 @@
 }
 
 .about__item {
-  $number-size: 280px;
-
   position: relative;
   margin-bottom: 20px;
 
@@ -60,8 +60,8 @@
       min-width: 135px;
 
       font-family: $special-font-stack;
-      font-size: $number-size;
-      line-height: $number-size;
+      font-size: 280px;
+      line-height: 280px;
       color: #f2f2f2;
       text-align: center;
     }
@@ -72,7 +72,7 @@
     margin-right: 80px;
     margin-bottom: 0;
     width: 245px;
-    min-height: $number-size;
+    min-height: 227px;
   }
 }
 

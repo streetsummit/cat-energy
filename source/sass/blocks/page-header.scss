@@ -5,14 +5,8 @@
   padding-top: 11px;
 
   &::after {
-    content: "";
-    position: absolute;
+    @include line-separator;
     bottom: 0;
-    right: 0;
-    left: -20px;
-    width: 100vw;
-    height: 1px;
-    background-color: #e6e6e6;
 
     @media (min-width: $tablet-width) {
       display: none;
