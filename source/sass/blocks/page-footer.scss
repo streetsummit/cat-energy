@@ -35,12 +35,10 @@
 
 .page-footer__invite {
   margin: 0;
-
   font-family: $special-font-stack;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
   color: $black-color;
 
   @media (min-width: $tablet-width) {
@@ -103,9 +101,17 @@
   margin-bottom: 27px;
   text-align: center;
 
+  &[href]:hover {
+    opacity: 80%;
+  }
+
+  &[href]:active {
+    opacity: 60%;
+  }
+
   @media (min-width: $tablet-width) {
-    text-align: left;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -123,9 +129,15 @@
 }
 
 .page-footer__social-list {
+  width: 135px;
   margin-left: auto;
   margin-right: auto;
-  width: 135px;
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .page-footer__link {
@@ -136,17 +148,21 @@
   line-height: 16px;
   color: $basic-text-color;
 
+  &:hover {
+    & path {
+      fill: $basic-color;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
 
     span {
       margin-right: 22px;
     }
-  }
-}
-
-.page-footer__copyright {
-  @media (min-width: $tablet-width) {
-    text-align: right;
   }
 }

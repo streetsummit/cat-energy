@@ -10,4 +10,21 @@
 
 .social__link {
   display: block;
+
+  &:hover {
+    & path {
+      fill: $basic-color;
+    }
+  }
+
+  &--fb:hover {
+    & path {
+      fill: none;
+      stroke: $basic-color;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

@@ -65,14 +65,12 @@
 }
 
 .site-nav__item a[href] {
-  @media (min-width: $tablet-width) {
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
