@@ -6,4 +6,9 @@
   font-weight: 400;
   line-height: 40px;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

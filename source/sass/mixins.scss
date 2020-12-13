@@ -1,0 +1,18 @@
+@mixin line-separator {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -20px;
+  width: 100vw;
+  height: 1px;
+  background-color: #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    left: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    width: 100%;
+  }
+}

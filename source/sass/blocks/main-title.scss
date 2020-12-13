@@ -1,16 +1,19 @@
 .main-title {
   margin: 0;
-
   font-family: $special-font-stack;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-
   color: $black-color;
 
   &--index {
     @media (max-width: $mobile-width-only) {
       color: $white-color;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
   }
 }

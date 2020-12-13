@@ -1,0 +1,11 @@
+.main-nav--closed {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs {
+  display: block;
+  position: static;
+  min-height: 0;
+}

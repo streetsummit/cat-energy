@@ -1,6 +1,6 @@
 .button {
-  display: block;
-  padding: 10px;
+  display: inline-block;
+  padding: 11px;
   box-sizing: border-box;
   font-family: $special-font-stack;
   font-size: 16px;
@@ -10,14 +10,29 @@
   color: $white-color;
   background-color: $basic-color;
   border: none;
-}
 
-.button--small-text {
-  font-size: 14px;
-  line-height: 18px;
-}
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
-.button--colorless {
-  color: #444444;
-  background-color: #f2f2f2;
+  &:active {
+    color: rgba($white-color, 0.3);
+  }
+
+  &--small-text {
+    @media (max-width: $mobile-width-only) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &--colorless {
+    color: #444444;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px;
+    font-size: 20px;
+  }
 }
