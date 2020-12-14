@@ -1,17 +1,24 @@
 .select-program {
+  padding-top: 27px;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 65px;
     padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 73px;
     padding-bottom: 82px;
   }
 }
 
 .select-program__title {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 
@@ -23,4 +30,10 @@
   line-height: 18px;
   color: $black-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

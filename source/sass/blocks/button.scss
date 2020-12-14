@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 11px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: $special-font-stack;
   font-size: 16px;
@@ -19,20 +19,23 @@
     color: rgba($white-color, 0.3);
   }
 
-  &--small-text {
-    @media (max-width: $mobile-width-only) {
-      font-size: 14px;
-      line-height: 18px;
+  &--wide {
+    @media (min-width: $tablet-width) {
+      padding: 16px;
+      font-size: 20px;
     }
   }
 
   &--colorless {
     color: #444444;
     background-color: #f2f2f2;
-  }
 
-  @media (min-width: $tablet-width) {
-    padding: 18px;
-    font-size: 20px;
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(#444444, 0.3);
+    }
   }
 }

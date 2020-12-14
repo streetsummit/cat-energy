@@ -371,8 +371,13 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
 
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
     &:active {
       border-color: $basic-color;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     }
 
     &::after {

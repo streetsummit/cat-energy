@@ -3,22 +3,76 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 70px;
   }
 }
 
 .form__item {
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   padding: 0;
   border: none;
-}
 
-.form__item--result {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+
+  &--cat-info {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--result {
+    padding-top: 22px;
+    padding-bottom: 18px;
+    margin-bottom: 26px;
+
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+
+      &::before {
+        @include line-separator;
+        top: 0;
+      }
+
+      &::after {
+        @include line-separator;
+        bottom: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 24px 28px;
+      border: 1px solid #e7e7e7;
+      margin-bottom: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--extra {
+    margin-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
+  }
 }
 
 .form__fieldset-wrapper {
@@ -36,22 +90,58 @@
   }
 }
 
+.form__contacts-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .form__label {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  &--result {
+    margin-bottom: 13px;
+  }
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 
   &--extra {
+    margin-bottom: 13px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
-}
 
-.form__label:last-of-type {
-  margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form__legend {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  &--extra {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+    }
+  }
 }
 
 .form__footer {
@@ -59,6 +149,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,4 +168,10 @@
 
 .form__note {
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }
