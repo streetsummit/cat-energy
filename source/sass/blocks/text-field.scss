@@ -1,4 +1,5 @@
 .text-field {
+  position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
@@ -6,6 +7,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .text-field__name {
@@ -15,11 +21,75 @@
 .text-field__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 12px 15px;
-  font-family: $special-font-stack;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  height: 45px;
+  padding: 12px 15px 13px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
   color: $basic-text-color;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: none;
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline-width: 2px;
+    outline-color: #444444;
+  }
+
+  &:focus:invalid {
+    outline-color: $error-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding: 11px 18px;
+  }
+
+  &--email {
+    padding-right: 48px;
+  }
+
+  &--phone {
+    padding-right: 48px;
+  }
+}
+
+.text-field__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.text-field__input:focus + .text-field__icon--email path,
+.text-field__input:focus + .text-field__icon--email line {
+  stroke: $basic-color;
+}
+
+.text-field__input:focus + .text-field__icon--phone path,
+.text-field__input:focus + .text-field__icon--phone line {
+  fill: $basic-color;
+}
+
+.text-field__input:focus:invalid + .text-field__icon--email path,
+.text-field__input:focus:invalid + .text-field__icon--email line {
+  stroke: $error-color;
+}
+
+.text-field__input:focus:invalid + .text-field__icon--phone path,
+.text-field__input:focus:invalid + .text-field__icon--phone line {
+  fill: $error-color;
+}
+
+.text-field__input::-webkit-outer-spin-button,
+.text-field__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.text-field__input[type="number"] {
+  appearance: textfield;
 }
