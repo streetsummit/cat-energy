@@ -9,18 +9,12 @@
   line-height: 27px;
   color: $black-color;
 
-  & span {
-    display: inline-block;
-    background-color: $page-background;
-    padding-right: 20px;
-  }
-
   &::after {
     content: "";
     position: absolute;
     z-index: -1;
     height: 2px;
-    width: calc(100vw - (50vw - 50%));
+    width: 100vw;
     left: 0;
     top: 50%;
     transform: translateY(50%);
@@ -29,30 +23,36 @@
 
   @media (max-width: $mobile-width-only) {
     &--multiline {
-      & span {
-        margin-right: 79px;
-      }
-
       &::after {
         top: 30%;
       }
     }
   }
 
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-left: -40px;
 
-    & span {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-
     &::after {
-      width: calc(100vw + 40px);
-      left: calc(50% - 50vw);
+      left: calc(50% - 50vw + 40px);
     }
+  }
+}
+
+.legend span {
+  display: inline-block;
+  background-color: $page-background;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.legend--multiline span {
+  @media (max-width: $mobile-width-only) {
+    margin-right: 79px;
   }
 }

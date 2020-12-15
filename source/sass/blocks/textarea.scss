@@ -10,7 +10,8 @@
   text-transform: uppercase;
 
   color: $basic-text-color;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: none;
 
   resize: none;
 
@@ -18,5 +19,18 @@
     font-size: 20px;
     line-height: 30px;
     height: 174px;
+  }
+
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline-width: 2px;
+    outline-color: #444444;
+  }
+
+  &:focus:invalid {
+    outline-color: $error-color;
   }
 }

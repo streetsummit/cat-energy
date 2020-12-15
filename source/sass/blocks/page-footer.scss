@@ -147,11 +147,10 @@
   font-size: 16px;
   line-height: 16px;
   color: $basic-text-color;
+  fill: #666666;
 
   &:hover {
-    & path {
-      fill: $basic-color;
-    }
+    fill: $basic-color;
   }
 
   &:active {

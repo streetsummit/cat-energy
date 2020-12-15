@@ -1,8 +1,7 @@
 @mixin line-separator {
   content: "";
   position: absolute;
-  right: 0;
-  left: calc(-1 * (50vw - 50%));
+  left: calc(50% - 50vw);
   width: 100vw;
   height: 1px;
   background-color: #e6e6e6;
