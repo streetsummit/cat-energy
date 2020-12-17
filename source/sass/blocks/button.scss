@@ -2,14 +2,17 @@
   display: inline-block;
   padding: 10px;
   box-sizing: border-box;
+
   font-family: $special-font-stack;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: $white-color;
+
   background-color: $basic-color;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
