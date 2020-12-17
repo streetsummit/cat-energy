@@ -14,7 +14,11 @@
 }
 
 .catalog__title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 84px;
