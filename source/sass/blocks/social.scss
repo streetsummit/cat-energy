@@ -11,15 +11,19 @@
 .social__link {
   display: block;
 
-  &:hover {
-    & path {
+  &--ig,
+  &--vk {
+    fill: #666666;
+
+    &:hover {
       fill: $basic-color;
     }
   }
 
-  &--fb:hover {
-    & path {
-      fill: none;
+  &--fb {
+    stroke: #666666;
+
+    &:hover {
       stroke: $basic-color;
     }
   }

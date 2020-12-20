@@ -65,23 +65,19 @@
   transform: translateY(-50%);
 }
 
-.text-field__input:focus + .text-field__icon--email path,
-.text-field__input:focus + .text-field__icon--email line {
+.text-field__input:focus + .text-field__icon--email {
   stroke: $basic-color;
 }
 
-.text-field__input:focus + .text-field__icon--phone path,
-.text-field__input:focus + .text-field__icon--phone line {
+.text-field__input:focus + .text-field__icon--phone {
   fill: $basic-color;
 }
 
-.text-field__input:focus:invalid + .text-field__icon--email path,
-.text-field__input:focus:invalid + .text-field__icon--email line {
+.text-field__input:focus:invalid + .text-field__icon--email {
   stroke: $error-color;
 }
 
-.text-field__input:focus:invalid + .text-field__icon--phone path,
-.text-field__input:focus:invalid + .text-field__icon--phone line {
+.text-field__input:focus:invalid + .text-field__icon--phone {
   fill: $error-color;
 }
 

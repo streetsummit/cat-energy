@@ -1,13 +1,18 @@
 .card {
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
+}
+
+.card__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "c-image c-title"
     "c-image c-options"
     "c-button c-button";
-  padding-top: 19px;
+  padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -16,32 +21,92 @@
       "c-title"
       "c-options"
       "c-button";
+    padding: 0 36px 40px;
+    background-color: $section-background;
   }
 }
 
 .card__title {
   grid-area: c-title;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 0;
+  padding-right: 64px;
   font-family: $special-font-stack;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card__image {
   grid-area: c-image;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -73px;
+    margin-bottom: 34px;
+  }
+}
+
+.card__image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .card__options {
   grid-area: c-options;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.card__options tr {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__options td {
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 8px;
+  }
+}
+
+.card__options tr:first-child td {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.card__value {
+  text-align: right;
 }
 
 .card__button {
   grid-area: c-button;
+  margin-top: 11px;
 }

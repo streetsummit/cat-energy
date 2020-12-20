@@ -1,8 +1,42 @@
 .more-card {
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
+}
+
+.more-card__wrapper {
+  position: relative;
   padding-top: 79px;
-  padding-bottom: 24px;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 25px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet-width) {
+      top: 82px;
+      width: 60px;
+    }
+  }
+
+  &::before {
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 161px 36px 35px;
+    border: 2px solid #f2f2f2;
+  }
 }
 
 .more-card__title {
@@ -13,8 +47,17 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
   text-align: center;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    max-width: 140px;
+    margin-right: auto;
+    margin-bottom: 23px;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more-card__note {
@@ -26,4 +69,17 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin-right: auto;
+    margin-bottom: 87px;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.more-card__button {
+  width: 100%;
 }
