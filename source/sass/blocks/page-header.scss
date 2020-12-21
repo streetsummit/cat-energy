@@ -39,11 +39,11 @@
   display: block;
   height: 38px;
 
-  &:hover {
+  &[href]:hover {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 

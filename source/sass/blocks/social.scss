@@ -1,34 +1,42 @@
 .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
 }
 
+.social__item {
+  margin-right: 25px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &--ig,
-  &--vk {
-    fill: #666666;
+  width: 30px;
+  height: 30px;
+  fill: #666666;
 
-    &:hover {
-      fill: $basic-color;
-    }
-  }
-
-  &--fb {
-    stroke: #666666;
-
-    &:hover {
-      stroke: $basic-color;
-    }
+  &:hover {
+    fill: $basic-color;
   }
 
   &:active {
     opacity: 30%;
+  }
+}
+
+
+.social__link svg {
+  @media (min-width: $tablet-width) {
+    transform: scale(1.35);
   }
 }
