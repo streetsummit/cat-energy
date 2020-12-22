@@ -101,28 +101,28 @@
 
   &--healthy {
     &::before {
-      background-image: url("../img/icon-leaf.svg");
+      background-image: url("../img/svg/icon-leaf.svg");
       background-size: 30px;
     }
   }
 
   &--easy {
     &::before {
-      background-image: url("../img/icon-tub.svg");
+      background-image: url("../img/svg/icon-tub.svg");
       background-size: 29px;
     }
   }
 
   &--meal {
     &::before {
-      background-image: url("../img/icon-eat.svg");
+      background-image: url("../img/svg/icon-eat.svg");
       background-size: 25px;
     }
   }
 
   &--changes {
     &::before {
-      background-image: url("../img/icon-alarm.svg");
+      background-image: url("../img/svg/icon-alarm.svg");
       background-size: 32px;
     }
   }
