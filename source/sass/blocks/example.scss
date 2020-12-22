@@ -54,7 +54,7 @@
 }
 
 .example__info {
-  margin-bottom: 33px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -233,21 +233,27 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 26px;
+    margin-left: -80px;
   }
 }
 
 .example__image {
   &--before {
-    width: 311px;
-    height: auto;
+    width: auto;
+    height: 232px;
 
     @media (min-width: $tablet-width) {
-      width: 680px;
+      height: 520px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      margin-left: -80px;
-    }
+  &--after {
+    width: auto;
+    height: 240px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 520px;
   }
 }
 
