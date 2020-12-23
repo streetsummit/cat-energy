@@ -71,6 +71,8 @@
 
 .page-footer__map iframe {
   display: block;
+  width: 100%;
+  height: 362px;
   border: none;
 
   @media (min-width: $tablet-width) {
