@@ -63,21 +63,14 @@
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
+  fill: #222222;
 }
 
-.text-field__input:focus + .text-field__icon--email {
-  stroke: $basic-color;
-}
-
-.text-field__input:focus + .text-field__icon--phone {
+.text-field__input:focus + .text-field__icon {
   fill: $basic-color;
 }
 
-.text-field__input:focus:invalid + .text-field__icon--email {
-  stroke: $error-color;
-}
-
-.text-field__input:focus:invalid + .text-field__icon--phone {
+.text-field__input:focus:invalid + .text-field__icon {
   fill: $error-color;
 }
 

@@ -61,12 +61,13 @@
 
 .card__image img {
   display: block;
+  width: 140px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 168px;
-    height: 200px;
   }
 }
 
@@ -109,4 +110,8 @@
 .card__button {
   grid-area: c-button;
   margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

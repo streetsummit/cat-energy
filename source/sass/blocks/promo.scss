@@ -11,13 +11,13 @@
 
     background-color: #4e4d52;
     background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-      url("../img/index-bg-mobile.jpg");
+      url("../img/backgrounds/index-bg-mobile.jpg");
     background-repeat: no-repeat;
     background-position: top center;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-        url("../img/index-bg-mobile@2x.jpg");
+        url("../img/backgrounds/index-bg-mobile@2x.jpg");
       background-size: auto 302px;
     }
 
@@ -33,14 +33,14 @@
       height: 694px;
 
       background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-        url("../img/index-bg-desktop.jpg");
+        url("../img/backgrounds/index-bg-desktop.jpg");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(to top, rgba($basic-color, 0.85), rgba($basic-color, 0.85)),
-          url("../img/index-bg-desktop@2x.jpg");
+          url("../img/backgrounds/index-bg-desktop@2x.jpg");
       }
     }
   }
