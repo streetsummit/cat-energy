@@ -79,6 +79,10 @@
     margin-bottom: 40px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+  }
 }
 
 .promo__lead {
@@ -104,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    width: 530px;
   }
 }
 
@@ -123,7 +128,8 @@
 
   @media (min-width: $desktop-width) {
     left: 448px;
-    bottom: 54px;
+    bottom: auto;
+    top: 29px;
     transform: none;
     width: 552px;
   }
