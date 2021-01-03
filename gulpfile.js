@@ -14,12 +14,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
-//копирование нужных файлов в папку build;
-//сборка спрайтов;
-//минификация стилей; +
-//оптимизация изображений.
-
-
 // Styles
 
 const styles = () => {
@@ -144,7 +138,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.scss", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
