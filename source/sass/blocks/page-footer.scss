@@ -89,6 +89,10 @@
     padding-top: 56px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
 }
 
 .page-footer__bottom-wrapper {
@@ -159,6 +163,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: inline-flex;
     justify-content: flex-end;
 
     span {

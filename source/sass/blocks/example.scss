@@ -54,10 +54,10 @@
 }
 
 .example__info {
-  margin-bottom: 44px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,14 +83,14 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 }
 
