@@ -69,6 +69,18 @@
   }
 }
 
+.page-footer__map--no-js {
+  background-image: url("../img/static-map/static-map-mobile.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: auto 100%;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/static-map/static-map-tablet.png");
+  }
+}
+
 .page-footer__map iframe {
   display: block;
   width: 100%;
