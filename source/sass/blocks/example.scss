@@ -269,7 +269,7 @@
   &--before {
     transform: translateX(calc(-50% - 2px));
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       transform: translateX(-50%);
     }
 
@@ -281,11 +281,11 @@
   &--after {
     transform: translateX(calc(-50% + 9px));
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       transform: translateX(calc(-50% + 25px));
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       transform: translateX(-50%);
     }
   }
