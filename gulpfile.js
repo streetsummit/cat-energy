@@ -4,7 +4,6 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify-es").default;
 const csso = require("postcss-csso");
 const autoprefixer = require("autoprefixer");
@@ -38,7 +37,6 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/**/*.html")
-  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"))
 }
 
