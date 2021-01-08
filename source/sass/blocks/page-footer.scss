@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-    padding-bottom: 57px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,12 +98,12 @@
   background-color: $section-background;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 55px;
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 60px;
+    padding-top: 57px;
   }
 }
 
@@ -145,7 +145,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 7px;
     padding: 0;
     border: none;
   }
@@ -177,9 +177,13 @@
   @media (min-width: $tablet-width) {
     display: inline-flex;
     justify-content: flex-end;
+  }
+}
 
-    span {
-      margin-right: 22px;
-    }
+.page-footer__link span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-right: 22px;
+    margin-bottom: 4px;
   }
 }
