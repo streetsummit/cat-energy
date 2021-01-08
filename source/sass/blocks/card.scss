@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 83px;
+  }
 }
 
 .card__wrapper {
@@ -21,7 +25,7 @@
       "c-title"
       "c-options"
       "c-button";
-    padding: 0 38px 44px;
+    padding: 0 38px 40px;
     background-color: $section-background;
   }
 }
