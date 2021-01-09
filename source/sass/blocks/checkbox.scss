@@ -61,3 +61,8 @@
 .checkbox__input:disabled + .checkbox__name {
   opacity: 30%;
 }
+
+.checkbox__input:focus + .checkbox__name::before {
+  border-color: #444444;
+  border-width: 2px;
+}

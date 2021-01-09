@@ -4,7 +4,6 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify-es").default;
 const csso = require("postcss-csso");
 const autoprefixer = require("autoprefixer");
@@ -13,12 +12,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
-
-//копирование нужных файлов в папку build;
-//сборка спрайтов;
-//минификация стилей; +
-//оптимизация изображений.
-
 
 // Styles
 
@@ -44,7 +37,6 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/**/*.html")
-  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"))
 }
 
@@ -144,7 +136,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.scss", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }

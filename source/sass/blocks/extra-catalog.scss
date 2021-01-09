@@ -91,6 +91,12 @@
       left: 89px;
       transform: none;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 

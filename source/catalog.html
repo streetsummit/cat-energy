@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов Cat Energy">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,7 +23,7 @@
               <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Energy">
             </picture>
           </a>
-          <button class="page-header__nav-toggle burger-button burger-button--closed" type="button"
+          <button class="page-header__nav-toggle burger-button--closed visually-hidden" type="button"
             aria-label="Открыть меню">
             <span class="burger-button__decoration"></span>
           </button>
@@ -57,8 +60,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy PRO 500&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/chicken-500.webp 1x, img/catalog/tablet/webp/chicken-500@2x.webp 2x">
@@ -70,7 +73,7 @@
                     <img src="img/catalog/mobile/chicken-500.png" srcset="img/catalog/mobile/chicken-500@2x.png 2x"
                       alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -85,7 +88,7 @@
                     <td class="card__value">700 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -93,8 +96,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy PRO 1000&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy PRO 1000&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/chicken-1000.webp 1x, img/catalog/tablet/webp/chicken-1000@2x.webp 2x">
@@ -106,7 +109,7 @@
                     <img src="img/catalog/mobile/chicken-1000.png" srcset="img/catalog/mobile/chicken-1000@2x.png 2x"
                       alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -121,7 +124,7 @@
                     <td class="card__value">1000 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -129,8 +132,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy PRO 500&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/fish-500.webp 1x, img/catalog/tablet/webp/fish-500@2x.webp 2x">
@@ -141,7 +144,7 @@
                       srcset="img/catalog/tablet/fish-500.png 1x, img/catalog/tablet/fish-500@2x.png 2x">
                     <img src="img/catalog/mobile/fish-500.png" srcset="img/catalog/mobile/fish-500@2x.png 2x" alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -156,7 +159,7 @@
                     <td class="card__value">700 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -164,8 +167,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy PRO 1000&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy PRO 1000&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/fish-1000.webp 1x, img/catalog/tablet/webp/fish-1000@2x.webp 2x">
@@ -176,7 +179,7 @@
                       srcset="img/catalog/tablet/fish-1000.png 1x, img/catalog/tablet/fish-1000@2x.png 2x">
                     <img src="img/catalog/mobile/fish-1000.png" srcset="img/catalog/mobile/fish-1000@2x.png 2x" alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -191,7 +194,7 @@
                     <td class="card__value">1000 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -199,8 +202,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy Slim 500&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy Slim 500&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/buckwheat-500.webp 1x, img/catalog/tablet/webp/buckwheat-500@2x.webp 2x">
@@ -212,7 +215,7 @@
                     <img src="img/catalog/mobile/buckwheat-500.png" srcset="img/catalog/mobile/buckwheat-500@2x.png 2x"
                       alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -227,7 +230,7 @@
                     <td class="card__value">400 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -235,8 +238,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy Slim 1000&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy Slim 1000&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/buckwheat-1000.webp 1x, img/catalog/tablet/webp/buckwheat-1000@2x.webp 2x">
@@ -248,7 +251,7 @@
                     <img src="img/catalog/mobile/buckwheat-1000.png"
                       srcset="img/catalog/mobile/buckwheat-1000@2x.png 2x" alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -260,10 +263,10 @@
                   </tr>
                   <tr>
                     <td class="card__term">Цена</td>
-                    <td class="card__value">500 Р.</td>
+                    <td class="card__value">700 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -271,8 +274,8 @@
           <li class="catalog__item">
             <div class="card">
               <div class="card__wrapper">
-                <h3 class="card__title">Cat Energy Slim 500&nbsp;г</h3>
-                <div class="card__image">
+                <h3 class="card__title"><a class="card__link" href="#">Cat Energy Slim 500&nbsp;г</a></h3>
+                <a class="card__image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/catalog/tablet/webp/rice-500.webp 1x, img/catalog/tablet/webp/rice-500@2x.webp 2x">
@@ -283,7 +286,7 @@
                       srcset="img/catalog/tablet/rice-500.png 1x, img/catalog/tablet/rice-500@2x.png 2x">
                     <img src="img/catalog/mobile/rice-500.png" srcset="img/catalog/mobile/rice-500@2x.png 2x" alt="">
                   </picture>
-                </div>
+                </a>
                 <table class="card__options">
                   <tr>
                     <td class="card__term">Масса</td>
@@ -298,7 +301,7 @@
                     <td class="card__value">500 Р.</td>
                   </tr>
                 </table>
-                <a class="card__button button" href="">Заказать</a>
+                <a class="card__button button" href="#">Заказать</a>
               </div>
             </div>
           </li>
@@ -308,7 +311,7 @@
               <div class="more-card__wrapper">
                 <p class="more-card__title">Показать ещё 100500 товаров</p>
                 <p class="more-card__note">На самом деле вкусов гораздо больше!</p>
-                <a class="more-card__button button button--colorless" href="">Показать все</a>
+                <a class="more-card__button button button--colorless" href="#">Показать все</a>
               </div>
             </div>
           </li>
@@ -324,7 +327,7 @@
                 <dt class="extra-card__term">1 упаковка (100&nbsp;г)</dt>
                 <dd class="extra-card__value">200 Р.</dd>
               </dl>
-              <a class="extra-card__button button" href="">Заказать</a>
+              <a class="extra-card__button button" href="#">Заказать</a>
             </li>
             <li class="extra-catalog__item extra-card">
               <h3 class="extra-card__title">Питьевая вода</h3>
@@ -332,7 +335,7 @@
                 <dt class="extra-card__term">5 литров</dt>
                 <dd class="extra-card__value">50 Р.</dd>
               </dl>
-              <a class="extra-card__button button" href="">Заказать</a>
+              <a class="extra-card__button button" href="#">Заказать</a>
             </li>
             <li class="extra-catalog__item extra-card">
               <h3 class="extra-card__title">Молоко</h3>
@@ -340,7 +343,7 @@
                 <dt class="extra-card__term">1 литр</dt>
                 <dd class="extra-card__value">100 Р.</dd>
               </dl>
-              <a class="extra-card__button button" href="">Заказать</a>
+              <a class="extra-card__button button" href="#">Заказать</a>
             </li>
             <li class="extra-catalog__item extra-card">
               <h3 class="extra-card__title">Витамины</h3>
@@ -348,7 +351,7 @@
                 <dt class="extra-card__term">1 упаковка (30&nbsp;г)</dt>
                 <dd class="extra-card__value">300 Р.</dd>
               </dl>
-              <a class="extra-card__button button" href="">Заказать</a>
+              <a class="extra-card__button button" href="#">Заказать</a>
             </li>
           </ul>
           <div class="extra-catalog__gift">
@@ -379,7 +382,7 @@
           </p>
         </div>
       </div>
-      <div class="page-footer__map">
+      <div class="page-footer__map page-footer__map--no-js">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b39b3bc650e800ffbc5a01d347533d6dcd09f01264e93829f69b097eb293057&amp;source=constructor"
           allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
@@ -397,15 +400,15 @@
             <ul class="page-footer__social-list social">
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Мы Вконтакте">
-                  <svg width="23" height="16" role="img">
+                  <svg class="social__icon social__icon--vk" width="23" height="13" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-vk"></use>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Мы в Instagram ">
-                  <svg width="16" height="16" role="img">
+                <a class="social__link" href="" aria-label="Мы в Instagram">
+                  <svg class="social__icon social__icon--ig" width="16" height="16" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-ig"></use>
                   </svg>
                 </a>
@@ -413,7 +416,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Мы в Facebook">
-                  <svg width="13" height="20" role="img">
+                  <svg class="social__icon social__icon--fb" width="13" height="20" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-fb"></use>
                   </svg>
                 </a>
@@ -435,6 +438,7 @@
   </footer>
 
   <script src="js/mobile-menu.min.js"></script>
+  <script src="js/static-map.min.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,10 @@
 
 .text-field__name {
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .text-field__input {

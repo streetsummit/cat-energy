@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов Cat Energy">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -60,12 +63,12 @@
               <legend class="visually-hidden">Информация о вашем питомце</legend>
 
               <label class="form__label text-field">
-                <span class="text-field__name">Имя:<sup>*</sup></span>
+                <span class="text-field__name">Имя:*</span>
                 <input class="text-field__input" type="text" name="cat-name" placeholder="Барсик" required>
               </label>
 
               <label class="form__label text-field">
-                <span class="text-field__name">Вес(кг):<sup>*</sup></span>
+                <span class="text-field__name">Вес (кг):*</span>
                 <input class="text-field__input" type="number" name="cat-weight" placeholder="7" required>
               </label>
 
@@ -100,7 +103,7 @@
             </legend>
             <div class="form__contacts-wrapper">
               <label class="form__label form__label--contacts text-field text-field--email">
-                <span class="text-field__name">E-mail:<sup>*</sup></span>
+                <span class="text-field__name">E-mail:*</span>
                 <input class="text-field__input text-field__input--email" type="email" name="user-email"
                   placeholder="kuklachev@gmail.com" required>
                 <svg class="text-field__icon" width="19" height="14" aria-hidden="true" focusable="false">
@@ -109,7 +112,7 @@
               </label>
 
               <label class="form__label form__label--contacts text-field text-field--phone">
-                <span class="text-field__name">Телефон:<sup>*</sup></span>
+                <span class="text-field__name">Телефон:*</span>
                 <input class="text-field__input text-field__input--phone" type="tel" name="user-phone"
                   placeholder="8 (960) 900-60-90" required>
                 <svg class="text-field__icon" width="20" height="20" aria-hidden="true" focusable="false">
@@ -180,7 +183,7 @@
       </div>
     </div>
 
-    <div class="page-footer__map">
+    <div class="page-footer__map page-footer__map--no-js">
       <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b39b3bc650e800ffbc5a01d347533d6dcd09f01264e93829f69b097eb293057&amp;source=constructor"
         allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
@@ -195,15 +198,15 @@
             <ul class="page-footer__social-list social">
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Мы Вконтакте">
-                  <svg width="23" height="16" role="img">
+                  <svg class="social__icon social__icon--vk" width="23" height="13" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-vk"></use>
                   </svg>
                 </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Мы в Instagram ">
-                  <svg width="16" height="16" role="img">
+                <a class="social__link" href="" aria-label="Мы в Instagram">
+                  <svg class="social__icon social__icon--ig" width="16" height="16" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-ig"></use>
                   </svg>
                 </a>
@@ -211,7 +214,7 @@
 
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Мы в Facebook">
-                  <svg width="13" height="20" role="img">
+                  <svg class="social__icon social__icon--fb" width="13" height="20" role="img">
                     <use xlink:href="img/svg/sprite.svg#logo-fb"></use>
                   </svg>
                 </a>
@@ -233,6 +236,7 @@
   </footer>
 
   <script src="js/mobile-menu.min.js"></script>
+  <script src="js/static-map.min.js"></script>
 </body>
 
 </html>

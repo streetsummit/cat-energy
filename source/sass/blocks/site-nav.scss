@@ -26,12 +26,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-left: 35px;
     padding-left: 0;
     padding-right: 0;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
   }
 }
@@ -57,10 +57,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 22px;
-    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
 }
 
@@ -79,7 +79,7 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      bottom: 2px;
+      bottom: 0;
       left: 0;
       right: 0;
       height: 2px;

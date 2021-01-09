@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -9,7 +11,11 @@
 }
 
 .social__item {
-  margin-right: 22px;
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
 }
 
 .social__item:last-child {
@@ -17,12 +23,13 @@
 }
 
 .social__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   fill: #666666;
 
   &:hover {
@@ -35,8 +42,22 @@
 }
 
 
-.social__link svg {
+.social__icon {
   @media (min-width: $tablet-width) {
-    transform: scale(1.35);
+    width: auto;
+
+    &--vk {
+      height: 17px;
+    }
+
+    &--ig {
+      height: 23px;
+    }
+
+    &--fb {
+      position: absolute;
+      height: 29px;
+      right: 14px;
+    }
   }
 }

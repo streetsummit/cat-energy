@@ -36,13 +36,13 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 60px;
-    margin-bottom: 67px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
 }
 
