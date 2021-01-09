@@ -15,7 +15,7 @@
       "p-title p-icon"
       "p-text p-icon"
       "p-link p-icon";
-    padding: 77px 53px 58px;
+    padding: 77px 53px 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
       "p-icon p-title"
       "p-text p-text"
       "p-link p-link";
-    padding: 77px 52px 61px;
+    padding: 77px 52px 64px;
   }
 
   &::before {
@@ -164,16 +164,10 @@
 
 .program__link {
   grid-area: p-link;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.program__link a {
   position: relative;
   display: inline-block;
-  padding: 4px 41px 4px 0;
+  width: max-content;
+  padding: 4px 48px 4px 0;
   font-family: $special-font-stack;
   font-size: 16px;
   font-weight: normal;
@@ -182,20 +176,63 @@
 
   color: $black-color;
 
+  &::before,
   &::after {
     position: absolute;
     top: 50%;
-    right: 0;
     transform: translateY(-50%);
     content: "";
-    width: 24px;
-    height: 12px;
-    background-image: url("../img/svg/icon-arrow.svg");
+  }
+
+  &::before {
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    right: 14px;
+
+    @media (min-width: $desktop-width) {
+      right: 11px;
+    }
+  }
+
+  &::after {
+    right: 3px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left: 7px solid #000000;
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 49px 0 0;
+    padding: 0 57px 0 0;
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.program__link:hover {
+  &::before {
+    width: 26px;
+    right: 6px;
+
+    @media (min-width: $desktop-width) {
+      right: 3px;
+    }
+  }
+
+  &::after {
+    right: -5px;
+
+    @media (min-width: $desktop-width) {
+      right: -8px;
+    }
+  }
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
