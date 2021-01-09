@@ -12,6 +12,10 @@
   }
 }
 
+.no-js .burger-button {
+  display: none;
+}
+
 .burger-button--closed .burger-button__decoration {
   position: absolute;
   left: 0;
