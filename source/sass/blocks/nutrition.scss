@@ -4,9 +4,10 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 40px;
   }
 }
 
