@@ -1,21 +1,22 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
-const rename = require("gulp-rename");
-const uglify = require("gulp-uglify-es").default;
-const csso = require("postcss-csso");
-const autoprefixer = require("autoprefixer");
-const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del = require("del");
-const sync = require("browser-sync").create();
+import gulp from "gulp";
+import plumber from "gulp-plumber";
+import sourcemap from "gulp-sourcemaps";
+import sass from "gulp-sass";
+import postcss from "gulp-postcss";
+import rename from "gulp-rename";
+import uglify from "gulp-uglify-es"//.default;
+import csso from "postcss-csso";
+import autoprefixer from "autoprefixer";
+import imagemin from "gulp-imagemin";
+import webp from "gulp-webp";
+import svgstore from "gulp-svgstore";
+import del from "del";
+import sync from "browser-sync";
+const browserSync = sync.create();
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -28,33 +29,33 @@ const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+    .pipe(browserSync .stream());
 }
 
-exports.styles = styles;
+// exports.styles = styles;
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp.src("source/**/*.html")
   .pipe(gulp.dest("build"))
 }
 
 //Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src("source/js/**/*.js")
   .pipe(uglify())
   .pipe(rename({suffix: ".min"}))
   .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+  .pipe(browserSync .stream());
 }
 
-exports.scripts = scripts;
+// exports.scripts = scripts;
 
 //Images
 
-const images = () => {
+export const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(imagemin([
     imagemin.mozjpeg({progressive: true}),
@@ -64,11 +65,11 @@ const images = () => {
   .pipe(gulp.dest("build/img"))
 }
 
-exports.images = images;
+// exports.images = images;
 
 //WebP
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
   .pipe(webp({quality: 90}))
   .pipe(rename(function (path) {
@@ -76,22 +77,22 @@ const createWebp = () => {
   .pipe(gulp.dest("build/img"))
 }
 
-exports.createWebp = createWebp;
+// exports.createWebp = createWebp;
 
 //Sprite
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src("source/img/svg/inline/*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img/svg"))
 }
 
-exports.sprite = sprite;
+// exports.sprite = sprite;
 
 //Copy
 
-const copy = () => {
+export const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/img/**/*.{jpg,png,svg}"
@@ -102,18 +103,18 @@ const copy = () => {
   .pipe(gulp.dest("build"))
 }
 
-exports.copy = copy;
+// exports.copy = copy;
 
 //Clean
 
-const clean = () => {
+export const clean = () => {
   return del("build")
 }
 
 // Server
 
-const server = (done) => {
-  sync.init({
+export const server = (done) => {
+  browserSync .init({
     server: {
       baseDir: 'build'
     },
@@ -124,25 +125,25 @@ const server = (done) => {
   done();
 }
 
-exports.server = server;
+// exports.server = server;
 
 // Reload
 
-const reload = done => {
-  sync.reload();
+export const reload = done => {
+  browserSync .reload();
   done();
 }
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 //Build
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
@@ -155,9 +156,9 @@ const build = gulp.series(
   )
 )
 
-exports.build = build;
+// exports.build = build;
 
-exports.default = gulp.series(
+export default gulp.series(
   clean,
   gulp.parallel(
     styles,
