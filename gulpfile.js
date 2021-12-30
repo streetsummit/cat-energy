@@ -2,6 +2,8 @@ import gulp from "gulp";
 import plumber from "gulp-plumber";
 import sourcemap from "gulp-sourcemaps";
 import sass from "gulp-sass";
+import dartsass from "sass";
+sass.compiler = dartsass;
 import postcss from "gulp-postcss";
 import rename from "gulp-rename";
 import uglify from "gulp-uglify-es"//.default;

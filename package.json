@@ -1,7 +1,7 @@
 {
   "name": "cat-energy-21",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "type": "module",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
@@ -21,6 +21,7 @@
     "postcss": "^8.4.5",
     "postcss-csso": "^5.0.1",
     "postcss-scss": "^4.0.2",
+    "sass": "^1.45.1",
     "stylelint": "^14.2.0"
   },
   "scripts": {
