@@ -8,7 +8,7 @@ import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import csso from "postcss-csso";
 import rename from "gulp-rename";
-import imagemin from "gulp-imagemin";
+import imagemin, { mozjpeg, optipng, svgo} from "gulp-imagemin";
 import webp from "gulp-webp";
 import svgstore from "gulp-svgstore";
 import sync from "browser-sync";
@@ -50,9 +50,9 @@ export const scripts = () => {
 export const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.svgo()
+      mozjpeg({ progressive: true }),
+      optipng({ optimizationLevel: 3 }),
+      svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 }
