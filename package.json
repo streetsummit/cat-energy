@@ -20,8 +20,8 @@
     "gulp-webp": "^4.0.1",
     "postcss-csso": "^6.0.0",
     "postcss-scss": "^4.0.3",
-    "sass": "^1.46.0",
-    "stylelint": "^14.6.1"
+    "sass": "^1.50.0",
+    "stylelint": "^14.7.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
