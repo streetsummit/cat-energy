@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Oswald"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 @font-face {
   font-family: "Oswald";
@@ -55,7 +55,7 @@ a {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -269,7 +269,7 @@ a {
   display: block;
   padding-top: 23px;
   padding-bottom: 23px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -327,7 +327,7 @@ a {
 
 .main-title {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
@@ -436,7 +436,7 @@ a {
 
 .promo__lead {
   margin: 0 0 29px 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
@@ -507,7 +507,7 @@ a {
   display: inline-block;
   padding: 10px;
   box-sizing: border-box;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -690,7 +690,7 @@ a {
   grid-area: p-title;
   margin-top: 0;
   margin-bottom: 29px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 24px;
   font-weight: normal;
   line-height: 37px;
@@ -738,7 +738,7 @@ a {
   display: inline-block;
   width: max-content;
   padding: 4px 48px 4px 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
@@ -806,7 +806,7 @@ a {
 
 .title {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -883,7 +883,7 @@ a {
     z-index: -1;
     display: block;
     min-width: 135px;
-    font-family: "Oswald", "Helvetica", sans-serif;
+    font-family: Oswald, "Arial Narrow", sans-serif;
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
@@ -1107,7 +1107,7 @@ a {
 .example__facts-number {
   margin-bottom: 8px;
   padding-top: 15px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -1150,7 +1150,7 @@ a {
 }
 
 .example__cost {
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -1288,7 +1288,7 @@ a {
 .example__state-button {
   min-width: 70px;
   padding: 10px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -1437,7 +1437,7 @@ a {
 
 .page-footer__invite {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -1766,7 +1766,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 64px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1914,7 +1914,7 @@ a {
 .more-card__title {
   margin-top: 0;
   margin-bottom: 8px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1963,7 +1963,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 27px;
@@ -2183,7 +2183,7 @@ a {
 .extra-card__title {
   margin-top: 0;
   margin-bottom: 13px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -2298,7 +2298,7 @@ a {
 .select-program__lead {
   margin-top: 0;
   margin-bottom: 39px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -2511,7 +2511,7 @@ a {
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2595,7 +2595,7 @@ a {
 
 .checkbox {
   display: block;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2665,7 +2665,7 @@ a {
 
 .radio {
   display: block;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2742,7 +2742,7 @@ a {
   width: 100%;
   height: 150px;
   padding: 12px 14px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
