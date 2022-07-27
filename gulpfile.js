@@ -14,8 +14,7 @@ import svgstore from "gulp-svgstore";
 import sync from "browser-sync";
 const browserSync = sync.create();
 import uglify from "gulp-uglify";
-import del from "del";
-
+import { deleteAsync } from 'del';
 
 export const styles = () => {
   return gulp.src("source/sass/style.scss")
@@ -85,7 +84,7 @@ export const copy = () => {
 }
 
 export const clean = () => {
-  return del("build")
+  return deleteAsync("build")
 }
 
 export const server = (done) => {
