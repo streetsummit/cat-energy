@@ -1,8 +1,8 @@
 document.documentElement.classList.remove('no-js');
 
 //Menu
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.page-header__nav-toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.page-header__nav-toggle');
 navMain.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function () {
